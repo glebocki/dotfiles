@@ -2,5 +2,9 @@
 
 echo "This script will instal software for Glebocki machine"
 
-echo "Install Git, Vim"
-sudo apt-get install git vim -y
+echo "Update"
+sudo apt-get update
+
+echo "Install Git, Vim, Java, Yo"
+sudo apt-get install git vim java yo -y
+
