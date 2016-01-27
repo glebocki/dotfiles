@@ -1,15 +1,15 @@
 #!/bin/bash
 
-echo "This script will instal software for Glebocki machine"
+echo -e "\e[35mThis script will instal software for Glebocki machine \e[39m"
 
-echo "Update"
+echo -e "\e[35mUpdate \e[39m"
 sudo apt-get update
 
-echo "Install Tree"
+echo -e "\e[35mInstall Tree \e[39m"
 sudo apt-get install tree -y
 
-echo "Install Git, Vim"
+echo -e "\e[35mInstall Git, Vim \e[39m"
 sudo apt-get install git vim java yo -y
 
-echo "Yeoman(Yo), gulp, bower"
+echo -e "\e[35mYeoman(Yo), gulp, bower \e[39m"
 npm install -g yo bower grunt-cli gulp -y
