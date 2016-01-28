@@ -13,8 +13,12 @@ colorscheme molotov
 " }
 
 " Relative numbers {
-set relativenumber " Use realtive line numbers. Current line is still in stat    us bar.
+if version > 703
+  set relativenumber " Use realtive line numbers. Current line is still in s    t    at    us bar.
+endif
+set number " if relative number does not work
 " }
+
 
 syntax enable           " enable syntax processing
 
