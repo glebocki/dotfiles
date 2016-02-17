@@ -50,6 +50,19 @@ set foldnestmax=10      " 10 nested fold max
 nnoremap <space> za
 set foldmethod=indent   " fold based on indent level. Other acceptable values are: marker, manual, e    xpr, syntax, diff. Run :help foldmehod to find out what each of those do
 
+" Arrow keys remap {
+" Disable Arrow keys in Escape mode
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+" Disable Arrow keys in Insert mode
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+"}
+
 " Movement - Controvelsial
 " move vertically by visual line
 " nnoremap j gj
