@@ -11,5 +11,7 @@ rm .Xdefaults
 ln -s dotfiles/.Xdefaults .Xdefaults
 rm .zshrc
 ln -s dotfiles/.zshrc .zshrc
+rm .gitconfig
+ln -s dotfiles/.gitconfig .gitconfig
 
 exit 0;
