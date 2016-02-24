@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Go to home dir and set links
 cd ~
 rm .bashrc
 ln -s dotfiles/.bashrc .bashrc
