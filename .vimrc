@@ -1,7 +1,11 @@
 " Przemysław Głębocki .vimrc
 
+execute pathogen#infect()
+" syntax on
+filetype plugin indent on
+
 " Make vim more useful {
-set nocompatible
+"set nocompatible
 " }
 
 " Syntax highlighting {
@@ -28,13 +32,22 @@ set softtabstop=4       " number of spaces in tab when editing
 " set expandtab
 
 " Ui Config
-" set number              " show line numbers
 set showcmd             " show command in bottom bar
 set cursorline          " highlight current line
 " filetype indent on      " load filetype-specific indent files
 set wildmenu            " visual autocomplete for command menu
 " set lazyredraw          " redraw only when we need to.
 set showmatch           " highlight matching [{()}]
+
+" Powerline {{{
+set laststatus=2
+let g:airline_powerline_fonts = 1
+let g:bufferline_echo = 0
+set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h20
+let g:airline_powerline_fonts = 1
+let g:Powerline_symbols = 'fancy'
+
+" }}}
 
 " Searching
 set incsearch           " search as characters are entered
@@ -63,9 +76,3 @@ imap <left> <nop>
 imap <right> <nop>
 "}
 
-" Movement - Controvelsial
-" move vertically by visual line
-" nnoremap j gj
-" nnoremap k gk
-" highlight last inserted text
-" nnoremap gV `[v`]
