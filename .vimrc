@@ -15,7 +15,7 @@ let g:molotov = 1
 set t_Co=256
 set background=dark
 syntax on
-" syntax enable           " enable syntax processing
+" syntax enable " enable syntax processing
 colorscheme molotov
 " }}}
 
@@ -24,14 +24,6 @@ set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
 set undodir=~/.vim/undo
 " }}}
-
-" Folding
-set foldenable          " enable folding
-set foldlevelstart=10   " open most folds by default
-set foldnestmax=10      " 10 nested fold max
-" space open/closes fold
-nnoremap <space> za
-set foldmethod=indent   " fold based on indent level. Other acceptable values are: marker, manual, expr, syntax, diff. Run :help foldmehod to find out what each of those do
 
 " Set some junk {{{
 set autoindent " Copy indent from last line when starting new line
@@ -57,28 +49,29 @@ set hlsearch " Highlight searches
 set ignorecase " Ignore case of searches
 set incsearch " Highlight dynamically as pattern is typed
 set noshowmode " Don't sow the current mode (airline.vim takes care of us)
+"set showcmd " Show command in bottom bar
+"set cursorline " Highlight current line
 set sidescrolloff=3 " Start scrolling three columns before vertical border of window
+set softtabstop=2 " Tab key results in 2 spaces
 set title " Show the filename in the window titlebar
 set ttyfast " Send more characters at a given time
 set visualbell " Use visual bell instead of audible bell (annnnnoying)
 set wildmenu " Hitting TAB in command mode will show possible completions above command line
 " }}}
 
-" Spaces & Tabs {{{
-set tabstop=4           " number of visual spaces per TAB
-set softtabstop=4       " number of spaces in tab when editing
-set expandtab
+
+" Configuration -------------------------------------------------------------
+
+" Relative numbers {{{
+if version > 703
+  set relativenumber " Use realtive line numbers. Current line is still in status bar.
+endif
+set number " if relative number does not work
 " }}}
 
-" Ui Config {{{
-"set showcmd             " show command in bottom bar
-"set cursorline          " highlight current line
-
-
-" set lazyredraw          " redraw only when we need to.
-"set showmatch           " highlight matching [{()}]
+" Macros {{{
+map <F7> mzgg=G`z " fix indentation in document
 " }}}
-
 
 " Arrow keys remap {{{
 " Disable Arrow keys in Escape mode
@@ -93,18 +86,8 @@ imap <left> <nop>
 imap <right> <nop>
 " }}}
 
-
-" Configuration -------------------------------------------------------------
-
-" Relative numbers {{{
-if version > 703
-  set relativenumber " Use realtive line numbers. Current line is still in status bar.
-endif
-set number " if relative number does not work
-" }}}
-
-" Macros {{{
-map <F7> mzgg=G`z       " fix indentation in document
+" Toggle folds (<Space>) {{{
+nnoremap <silent> <space> :exe 'silent! normal! '.((foldclosed('.')>0)? 'zMzx' : 'zc')<CR>
 " }}}
 
 
