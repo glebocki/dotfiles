@@ -75,14 +75,6 @@ set wildmenu            " visual autocomplete for command menu
 set showmatch           " highlight matching [{()}]
 " }}}
 
-" Searching {{{
-set incsearch           " search as characters are entered
-set hlsearch            " highlight matches
-" turn off search highlight
-nnoremap <leader><space> :nohlsearch<CR>
-" }}}
-
-
 
 " Arrow keys remap {{{
 " Disable Arrow keys in Escape mode
