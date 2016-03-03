@@ -58,6 +58,10 @@ set ignorecase " Ignore case of searches
 set incsearch " Highlight dynamically as pattern is typed
 set noshowmode " Don't sow the current mode (airline.vim takes care of us)
 set sidescrolloff=3 " Start scrolling three columns before vertical border of window
+set title " Show the filename in the window titlebar
+set ttyfast " Send more characters at a given time
+set visualbell " Use visual bell instead of audible bell (annnnnoying)
+set wildmenu " Hitting TAB in command mode will show possible completions above command line
 " }}}
 
 " Spaces & Tabs {{{
@@ -67,12 +71,12 @@ set expandtab
 " }}}
 
 " Ui Config {{{
-set showcmd             " show command in bottom bar
-set cursorline          " highlight current line
-" filetype indent on      " load filetype-specific indent files
-set wildmenu            " visual autocomplete for command menu
+"set showcmd             " show command in bottom bar
+"set cursorline          " highlight current line
+
+
 " set lazyredraw          " redraw only when we need to.
-set showmatch           " highlight matching [{()}]
+"set showmatch           " highlight matching [{()}]
 " }}}
 
 
