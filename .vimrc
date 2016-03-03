@@ -57,6 +57,7 @@ set hlsearch " Highlight searches
 set ignorecase " Ignore case of searches
 set incsearch " Highlight dynamically as pattern is typed
 set noshowmode " Don't sow the current mode (airline.vim takes care of us)
+set sidescrolloff=3 " Start scrolling three columns before vertical border of window
 " }}}
 
 " Spaces & Tabs {{{
