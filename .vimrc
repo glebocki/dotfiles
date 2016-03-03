@@ -1,5 +1,7 @@
 " Przemysław Głębocki .vimrc
 
+" Settings -------------------------------------------------------------
+
 " Pathogen {{{
 execute pathogen#infect()
 " }}}
@@ -23,10 +25,24 @@ set directory=~/.vim/swaps
 set undodir=~/.vim/undo
 " }}}
 
+" Folding
+set foldenable          " enable folding
+set foldlevelstart=10   " open most folds by default
+set foldnestmax=10      " 10 nested fold max
+" space open/closes fold
+nnoremap <space> za
+set foldmethod=indent   " fold based on indent level. Other acceptable values are: marker, manual, expr, syntax, diff. Run :help foldmehod to find out what each of those do
+
 " Set some junk {{{
 set autoindent " Copy indent from last line when starting new line
 set cursorline " Highlight current line
 set expandtab " Expand tabs to spaces
+set foldcolumn=0 " Column to show folds
+set foldenable " Enable folding
+set foldlevel=0 " Close all folds by defaults
+set foldmethod=syntax " Syntax are used to specify folds
+set foldminlines=0 " Allow folding single lines
+set foldnestmax=5 " Set max nesting level
 set formatoptions=
 set formatoptions+=c " Format comments
 set formatoptions+=r " Continue comments by default
@@ -37,6 +53,9 @@ set formatoptions+=2 " Use indent from 2nd line of a paragraph
 set formatoptions+=l " Don't break lines that are already long
 set formatoptions+=1 " Break before 1-letter words
 set history=1000 " Increase history from 20 default to 1000
+set hlsearch " Highlight searches
+set ignorecase " Ignore case of searches
+set incsearch " Highlight dynamically as pattern is typed
 set noshowmode " Don't sow the current mode (airline.vim takes care of us)
 " }}}
 
@@ -62,13 +81,7 @@ set hlsearch            " highlight matches
 nnoremap <leader><space> :nohlsearch<CR>
 " }}}
 
-" Folding
-set foldenable          " enable folding
-set foldlevelstart=10   " open most folds by default
-set foldnestmax=10      " 10 nested fold max
-" space open/closes fold
-nnoremap <space> za
-set foldmethod=indent   " fold based on indent level. Other acceptable values are: marker, manual, e    xpr, syntax, diff. Run :help foldmehod to find out what each of those do
+
 
 " Arrow keys remap {{{
 " Disable Arrow keys in Escape mode
