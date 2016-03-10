@@ -13,4 +13,10 @@ ln -s dotfiles/.zshrc .zshrc
 rm .gitconfig
 ln -s dotfiles/.gitconfig .gitconfig
 
+# Backup Dirs
+mkdir ~/.vim
+mkdir .vim/backups
+mkdir .vim/swaps
+mkdir .vim/undo
+
 exit 0;
