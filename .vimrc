@@ -16,7 +16,8 @@ set t_Co=256
 set background=dark
 syntax on
 " syntax enable " enable syntax processing
-colorscheme molotov
+"colorscheme molotov
+colorscheme badwolf
 " }}}
 
 " Local directories {{{
@@ -75,15 +76,15 @@ map <F7> mzgg=G`z " fix indentation in document
 
 " Arrow keys remap {{{
 " Disable Arrow keys in Escape mode
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
+"map <up> <nop>
+"map <down> <nop>
+"map <left> <nop>
+"map <right> <nop>
 " Disable Arrow keys in Insert mode
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
+"imap <up> <nop>
+"imap <down> <nop>
+"imap <left> <nop>
+"imap <right> <nop>
 " }}}
 
 " Toggle folds (<Space>) {{{
@@ -101,3 +102,4 @@ set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h20
 let g:airline_powerline_fonts = 1
 let g:Powerline_symbols = 'fancy'
 " }}}
+
