@@ -11,13 +11,13 @@ set nocompatible
 " }}}
 
 " Syntax highlighting {{{
-let g:molotov = 1
-set t_Co=256
-set background=dark
+"let g:molotov = 1
+"set t_Co=256
+"set background=dark
 syntax on
 " syntax enable " enable syntax processing
 "colorscheme molotov
-colorscheme badwolf
+"colorscheme badwolf
 " }}}
 
 " Local directories {{{
@@ -28,11 +28,11 @@ set undodir=~/.vim/undo
 
 " Set some junk {{{
 set autoindent " Copy indent from last line when starting new line
-set cursorline " Highlight current line
+"set cursorline " Highlight current line
 set expandtab " Expand tabs to spaces
-set foldcolumn=0 " Column to show folds
-set foldenable " Enable folding
-set foldlevel=0 " Close all folds by defaults
+"set foldcolumn=0 " Column to show folds
+"set foldenable " Enable folding
+"set foldlevel=0 " Close all folds by defaults
 set foldmethod=syntax " Syntax are used to specify folds
 set foldminlines=0 " Allow folding single lines
 set foldnestmax=5 " Set max nesting level

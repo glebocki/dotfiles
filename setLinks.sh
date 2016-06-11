@@ -8,8 +8,8 @@ rm .vim
 ln -s dotfiles/.vim .vim
 rm .vimrc
 ln -s dotfiles/.vimrc .vimrc
-rm .zshrc
-ln -s dotfiles/.zshrc .zshrc
+#rm .zshrc
+#ln -s dotfiles/.zshrc .zshrc
 rm .gitconfig
 ln -s dotfiles/.gitconfig .gitconfig
 
