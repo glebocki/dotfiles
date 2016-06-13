@@ -33,9 +33,9 @@ set expandtab " Expand tabs to spaces
 "set foldcolumn=0 " Column to show folds
 "set foldenable " Enable folding
 "set foldlevel=0 " Close all folds by defaults
-set foldmethod=syntax " Syntax are used to specify folds
-set foldminlines=0 " Allow folding single lines
-set foldnestmax=5 " Set max nesting level
+"set foldmethod=syntax " Syntax are used to specify folds
+"set foldminlines=0 " Allow folding single lines
+"set foldnestmax=5 " Set max nesting level
 set formatoptions=
 set formatoptions+=c " Format comments
 set formatoptions+=r " Continue comments by default
@@ -49,9 +49,10 @@ set history=1000 " Increase history from 20 default to 1000
 set hlsearch " Highlight searches
 set ignorecase " Ignore case of searches
 set incsearch " Highlight dynamically as pattern is typed
-set noshowmode " Don't sow the current mode (airline.vim takes care of us)
-"set showcmd " Show command in bottom bar
+"set noshowmode " Don't sow the current mode (airline.vim takes care of us)
+set showcmd " Show command in bottom bar
 "set cursorline " Highlight current line
+"set scrolloff=3
 set sidescrolloff=3 " Start scrolling three columns before vertical border of window
 set softtabstop=2 " Tab key results in 2 spaces
 set title " Show the filename in the window titlebar
@@ -95,11 +96,11 @@ nnoremap <silent> <space> :exe 'silent! normal! '.((foldclosed('.')>0)? 'zMzx' :
 " Plugin Configuration -------------------------------------------------------------
 
 " Airline.vim {{{
-set laststatus=2
-let g:airline_powerline_fonts = 1
-let g:bufferline_echo = 0
-set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h20
-let g:airline_powerline_fonts = 1
-let g:Powerline_symbols = 'fancy'
+"set laststatus=2
+"let g:airline_powerline_fonts = 1
+"let g:bufferline_echo = 0
+"set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h20
+"let g:airline_powerline_fonts = 1
+"let g:Powerline_symbols = 'fancy'
 " }}}
 
