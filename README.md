@@ -1,13 +1,13 @@
 #This is Przemysław Głębocki personal dofiles git repository.
 
-## What I use?
+##What I use?
 
 - Vim
   - mostly I use Vim so i have a .vimrc for it
   - [emmet for vim](https://github.com/mattn/emmet-vim)
   
 
-##How to use this ?
+##How to use this?
 
 git clone this repository.
 
