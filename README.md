@@ -3,8 +3,8 @@
 ##What I use?
 
 - Vim
-  - mostly I use Vim so i have a .vimrc for it
-  - [emmet for vim](https://github.com/mattn/emmet-vim)
+  - Mostly I use Vim so i have a .vimrc for it
+  - [Emmet for vim](https://github.com/mattn/emmet-vim)
 - [Sass](http://sass-lang.com/) ( very helpful CSS preprocessor )
 
 ##How to use this?
