@@ -3,3 +3,6 @@
 	email = glebocki.przemyslaw@gmail.com
 [push]
 	default = simple
+[aliases]
+	adog = log --all --decorate --oneline --graph
+
